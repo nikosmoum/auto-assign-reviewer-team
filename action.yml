@@ -1,0 +1,12 @@
+name: 'AutoAssignReviewerTeam'
+description: 'Run script that auto-assigns a team as a PR reviewer'
+inputs:
+  githubToken:
+    description: 'The token to use'
+    required: true
+  teamName:
+    description: 'The name of the team which will be assigned as a reviewer'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
