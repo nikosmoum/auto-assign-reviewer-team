@@ -17,7 +17,8 @@ async function run() {
       pull_number: pr.number,
       team_reviewers: [teamName]
     });
-    console.log('Response: ' + response);
+    console.log('Response: ');
+    console.log(response);
     console.log('Review Request done...');
 }
 
