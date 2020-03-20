@@ -1,5 +1,8 @@
 name: 'AutoAssignReviewerTeam'
 description: 'Run script that auto-assigns a team as a PR reviewer'
+branding:
+  icon: 'at-sign'
+  color: 'purple'
 inputs:
   githubToken:
     description: 'The token to use'
