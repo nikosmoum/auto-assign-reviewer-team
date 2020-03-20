@@ -10,12 +10,14 @@ async function run() {
 
     const octokit = new github.GitHub(githubToken);
 
+    console.log('About to request review from team ${teamName} for PR number ${pr.number}, on repo ${github.context.repo.owner}/${github.context.repo.repo}');
     octokit.pulls.createReviewRequest({
       owner: github.context.repo.owner,
       repo: github.context.repo.repo,
       pull_number: pr.number,
       team_reviewers: [teamName]
     });
+    console.log('Review Request done...');
 }
 
 run();

@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run assignment of reviewer team
-        uses: nikosmoum/auto-assign-reviewer-team@v0.2
+        uses: nikosmoum/auto-assign-reviewer-team@v0.3
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           teamName: 'my-team-name'
