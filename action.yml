@@ -1,5 +1,5 @@
 name: 'AutoAssignReviewerTeam'
-description: 'Run script that auto-assigns a team as a PR reviewer'
+description: 'Run script that auto-assigns a team as a PR reviewer1'
 branding:
   icon: 'at-sign'
   color: 'purple'
