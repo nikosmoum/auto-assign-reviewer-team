@@ -3,7 +3,7 @@ Github Action that auto-assigs a team as a PR reviewer
 
 ## Usage example
 
-Create a workflow file (e.g. `.github/workflows/auto-assign.yml`) that contains a step that `uses: nikosmoum/auto-assign-reviewer-team@v0.3`. Example:
+Create a workflow file (e.g. `.github/workflows/auto-assign.yml`) that contains a step that `uses: nikosmoum/auto-assign-reviewer-team@v0.5`. Example:
 
 ```yaml
 name: AutoAssignReviewer
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run assignment of reviewer team
-        uses: nikosmoum/auto-assign-reviewer-team@v0.3
+        uses: nikosmoum/auto-assign-reviewer-team@v0.5
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           teamName: 'my-team-name'
